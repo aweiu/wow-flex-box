@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+}
+
+.box:not(.vertical).center {
+  justify-content: center;
+}
+
+.box:not(.vertical).vertical-center {
+  align-items: center;
+}
+
+.box.vertical {
+  flex-direction: column;
+}
+
+.box.vertical.center {
+  align-items: center;
+}
+
+.box.vertical.vertical-center {
+  justify-content: center;
+}
+
+.box.evenly > * {
+  flex: 1;
+}
+
+.box > .full {
+  flex: 1;
+}

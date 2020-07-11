@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>wow-flex-box</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body > .box {
+        margin-top: 10px;
+      }
+      .box {
+        color: white;
+      }
+      .box > *:nth-child(1) {
+        background-color: #00c0ef;
+      }
+      .box > *:nth-child(2) {
+        background-color: #00a65a;
+      }
+      .box > *:nth-child(3) {
+        background-color: #f39c12;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>水</div>
+      <div>平</div>
+      <div>排列</div>
+    </div>
+    <div class="box center" style="background-color: #f56954; height: 50px;">
+      <div style="height: fit-content;">水平</div>
+      <div style="height: fit-content;">水平居中</div>
+      <div style="height: fit-content;">排列</div>
+    </div>
+    <div
+      class="box vertical-center"
+      style="background-color: #f56954; height: 50px;"
+    >
+      <div style="height: fit-content;">水平</div>
+      <div style="height: fit-content;">垂直居中</div>
+      <div style="height: fit-content;">排列</div>
+    </div>
+    <div
+      class="box center vertical-center"
+      style="background-color: #f56954; height: 50px;"
+    >
+      <div>水平</div>
+      <div>水平垂直</div>
+      <div>居中</div>
+    </div>
+    <div class="box evenly" style="background-color: #f56954;">
+      <div class="box center">水平</div>
+      <div class="box center">平均</div>
+      <div class="box center">排列</div>
+    </div>
+    <div class="box" style="background-color: #f56954;">
+      <div class="box center">水平</div>
+      <div class="box center full">自动占满剩</div>
+      <div class="box center">余空间</div>
+    </div>
+    <div class="box vertical">
+      <div style="width: fit-content;">垂</div>
+      <div style="width: fit-content;">直</div>
+      <div style="width: fit-content;">排列</div>
+    </div>
+    <div class="box vertical center" style="background-color: #f56954;">
+      <div style="height: fit-content;">垂直</div>
+      <div style="height: fit-content;">水平居中</div>
+      <div style="height: fit-content;">排列</div>
+    </div>
+    <div
+      class="box vertical vertical-center"
+      style="background-color: #f56954; height: 100px;"
+    >
+      <div style="width: fit-content;">垂直</div>
+      <div style="width: fit-content;">垂直居中</div>
+      <div style="width: fit-content;">排列</div>
+    </div>
+    <div
+      class="box vertical center vertical-center"
+      style="background-color: #f56954; height: 100px;"
+    >
+      <div style="width: fit-content;">垂直</div>
+      <div style="width: fit-content;">水平垂直</div>
+      <div style="width: fit-content;">居中</div>
+    </div>
+    <div
+      class="box vertical evenly"
+      style="background-color: #f56954; width: fit-content; height: 200px;"
+    >
+      <div class="box vertical-center">垂直</div>
+      <div class="box vertical-center">平均</div>
+      <div class="box vertical-center">排列</div>
+    </div>
+    <div
+      class="box vertical"
+      style="background-color: #f56954; width: fit-content; height: 200px;"
+    >
+      <div class="box center">垂直</div>
+      <div class="box center vertical-center full">自动占满剩</div>
+      <div class="box center">余空间</div>
+    </div>
+  </body>
+</html>
